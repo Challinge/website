@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imgdesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textNumCompteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="18dp"
+        android:text="@string/numcompteur" />
+
+    <EditText
+        android:id="@+id/editNumCompteur"
+        android:hint="@string/texthintcompteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textNumCompteur"
+        android:layout_alignTop="@+id/textNumCompteur"
+        android:layout_marginTop="16dp"
+        android:ems="10" > 
+        
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCptStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCompteurSuivant"
+        android:layout_alignBottom="@+id/btnCompteurSuivant"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/btnCompteurSuivant"
+        android:text="@string/btnstatistique" />
+
+    <EditText
+        android:id="@+id/editAncienIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textAncienIndex"
+        android:layout_below="@+id/textAncienIndex"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        android:text="@string/valuezero" />
+
+    <EditText
+        android:id="@+id/editNouvelIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textNouvelIndex"
+        android:layout_below="@+id/textNouvelIndex"
+        android:enabled="false"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/valuezero" />
+
+    <Button
+        android:id="@+id/btnCompteurSuivant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNouvelIndex"
+        android:layout_toRightOf="@+id/editNouvelIndex"
+        android:enabled="false"
+        android:text="@string/btnsuivant" />
+
+    <TextView
+        android:id="@+id/textAncienIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNumCompteur"
+        android:layout_below="@+id/editNumCompteur"
+        android:text="@string/numancienindex" />
+
+    <TextView
+        android:id="@+id/textNouvelIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAncienIndex"
+        android:layout_below="@+id/editAncienIndex"
+        android:text="@string/numnouvelindex" />
+
+</RelativeLayout>

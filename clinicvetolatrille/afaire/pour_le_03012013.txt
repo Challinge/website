@@ -1,0 +1,18 @@
+majuscule - ok
+vtype - ok
+combobox - ok
+date - ok
+chargement du rï¿½sultat dans MsgBox de Extjs(dans l'Ã©tude des regEx) - ok
+eliminer doublon - ok
+imprimer php rtf - ok
+sÃ©curiser tous tes champs contre les failles de sÃ©curitÃ© - ok
+Mise en oeuvre des fonctionnalités dans tous les formulaires restants - ok
+voir la suppression , elle semble ne pas marcher - ok
+le champ de recherche de grids
+le champ de navigation 1-2-3 entre les informations en bas du grid - ok
+global bdd
+classe date regex - pas important - ok
+vider le grid soin quand il n' y a pas de valeurs correspondantes à animal - ok
+faire un controller pour ordonnance important pour question de maintenance - ok
+: à mettre sur tous les champs
+correction de l'application, ne pas oublier le htmlentities pour tous les print

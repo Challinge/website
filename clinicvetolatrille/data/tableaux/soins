@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "data": [{
+  	  "_id": "123",
+      "dates": "12/02/2012",
+      "symptomes": "douleur abdominal",
+      "diagnostic": "dos déformé",
+      "traitements": "jus de citron"
+      },{
+      "_id": "1235",
+  	  "dates": "10/11/2012",
+      "symptomes": "mal de gorges",
+      "diagnostic": "inflamation des parois muqueuses",
+      "traitements": "amoxixiline"
+  }]
+}

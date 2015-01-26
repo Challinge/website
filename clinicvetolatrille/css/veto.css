@@ -1,0 +1,32 @@
+/* style rows on mouseover */
+.x-grid-row-over .x-grid-cell-inner {
+	font-weight: bold;
+}
+
+.icon-add {
+	background-image: url('images/add.png') !important;
+}
+
+.icon-delete {
+	background-image: url('images/delete.png') !important;
+}
+
+img.x-action-col-icon {
+	margin-right: 5px;
+}
+
+#div-1 {
+	top: 170px;
+	position: relative;
+}
+
+#div-1 {
+	top: 170px;
+	position: relative;
+}
+
+#deconnexion {
+	color: white;
+	margin-left: 68em;
+	cursor: pointer;
+}

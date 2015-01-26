@@ -1,0 +1,330 @@
+columnWidth : 0.70,
+				
+				xtype : 'gridpanel',
+				tbar : ['Recherche',{
+                 xtype: 'textfield',
+                 name: 'searchField',
+                 hideLabel: true,
+                 width: 200,
+                 listeners: {
+                     change: {
+                         fn: onTextFieldChange,
+                         buffer: 100
+                     }
+                 }
+            }],
+				defaultStatusText: 'Nothing Found',
+				store : ds,
+				height : 400,
+				title : 'Liste de propi&eacute;taires',
+
+				columns : [{
+					text : 'Propi&eacute;taire',
+					
+					sortable : true,
+					dataIndex : 'company'
+				}, {
+					text : 'Profession',
+					width : 75,
+					sortable : true,
+					dataIndex : 'price'
+				}, {
+					text : 'Adresse g&eacute;ographique',
+					width : 75,
+					sortable : true,
+					renderer : change,
+					dataIndex : 'change'
+				}, {
+					text : 'Adresse Postale',
+					width : 75,
+					sortable : true,
+					renderer : pctChange,
+					dataIndex : 'pctChange'
+				}, {
+					text : 'Tel (Bureau)',
+					width : 85,
+					sortable : true,
+					renderer : Ext.util.Format.dateRenderer('m/d/Y'),
+					dataIndex : 'lastChange'
+				}, {
+					text : 'Tel (Portable)',
+					width : 30,
+					sortable : true,
+					renderer : rating,
+					dataIndex : 'rating'
+				}],
+
+				listeners : {
+					selectionchange : function(model, records) {
+						if (records[0]) {
+							this.up('form').getForm().loadRecord(records[0]);
+						}
+					}
+				}
+			},{
+				columnWidth : 0.3,
+				margin : '0 0 0 2',
+				xtype : 'fieldset',
+				title : 'D&eacute;tails propi&eacute;taires',
+				defaults : {
+					width : 240,
+					labelWidth : 90
+				},
+				defaultType : 'textfield',
+				items : [{
+					fieldLabel : 'Propi&eacute;taire',
+					name : 'company'
+				}, {
+					fieldLabel : 'Profession',
+					name : 'price'
+				}, {
+					fieldLabel : 'Adresse g&eacute;ographique',
+					name : 'pctChange'
+				}, {
+					fieldLabel : 'Tel (Bureau)',
+					name : 'lastChange'
+				}, {
+					xtype: 'button',
+            		text : 'Suivant',
+            		handler: function() {
+            			var users = tabs.child('#animal');
+    					users.tab.show();
+    					tabs.setActiveTab(users);
+    				}
+            	}
+				]
+				}]
+			},
+			
+			{
+				itemId: 'animal',
+			xtype : 'form',
+			layout : 'fit',
+			title : 'Animal',
+			bodyPadding : 5,
+			width : 950,
+			layout : 'column', // Specifies that the items will now be arranged in columns
+
+			fieldDefaults : {
+				labelAlign : 'left',
+				msgTarget : 'side'
+			},
+			items :[
+			{
+				columnWidth : 0.60,
+				
+				xtype : 'gridpanel',
+				tbar : ['Recherche',{
+                 xtype: 'textfield',
+                 name: 'searchField',
+                 hideLabel: true,
+                 width: 200,
+                 listeners: {
+                     change: {
+                         fn: onTextFieldChange,
+                         buffer: 100
+                     }
+                 }
+            }],
+				defaultStatusText: 'Nothing Found',
+				store : ds,
+				height : 400,
+				title : 'Liste d\'animaux',
+
+				columns : [{
+					text : 'Nom',
+					flex : 1,
+					sortable : true,
+					dataIndex : 'company'
+				}, {
+					text : 'Race',
+					width : 75,
+					sortable : true,
+					dataIndex : 'price'
+				}, {
+					text : 'Date de naissance',
+					width : 75,
+					sortable : true,
+					renderer : change,
+					dataIndex : 'change'
+				}, {
+					text : 'Robe',
+					width : 75,
+					sortable : true,
+					renderer : pctChange,
+					dataIndex : 'pctChange'
+				}, {
+					text : 'Poids',
+					width : 85,
+					sortable : true,
+					renderer : Ext.util.Format.dateRenderer('m/d/Y'),
+					dataIndex : 'lastChange'
+				}, {
+					text : 'Sexe',
+					width : 30,
+					sortable : true,
+					renderer : rating,
+					dataIndex : 'rating'
+				}],
+
+				listeners : {
+					selectionchange : function(model, records) {
+						if (records[0]) {
+							this.up('form').getForm().loadRecord(records[0]);
+						}
+					}
+				}
+			},{
+				columnWidth : 0.4,
+				margin : '0 0 0 10',
+				xtype : 'fieldset',
+				title : 'D&eacute;tails animal',
+				defaults : {
+					width : 240,
+					labelWidth : 90
+				},
+				defaultType : 'textfield',
+				items : [{
+					fieldLabel : 'Nom',
+					name : 'company'
+				}, {
+					fieldLabel : 'Race',
+					name : 'price'
+				}, {
+					fieldLabel : 'Sexe',
+					name : 'pctChange'
+				}, {
+					fieldLabel : 'Poids',
+					name : 'lastChange'
+				},{
+					xtype: 'button',
+            		text : 'Suivant',
+            		handler: function() {
+            			var users = tabs.child('#soins');
+    					users.tab.show();
+    					tabs.setActiveTab(users);
+    				}
+            	}]
+				}]
+			},
+			{
+			xtype : 'form',
+			layout : 'fit',
+			title : 'Soins',
+			itemId: 'soins',
+			bodyPadding : 5,
+			width : 950,
+			layout : 'column', // Specifies that the items will now be arranged in columns
+
+			fieldDefaults : {
+				labelAlign : 'left',
+				msgTarget : 'side'
+			},
+			
+	        
+			items :[
+			{
+				columnWidth : 0.60,
+				
+				xtype : 'gridpanel',
+				tbar : ['Recherche',{
+                 xtype: 'textfield',
+                 name: 'searchField',
+                 hideLabel: true,
+                 width: 200,
+                 listeners: {
+                     change: {
+                         fn: onTextFieldChange,
+                         buffer: 100
+                     }
+                 }
+            }],
+				defaultStatusText: 'Nothing Found',
+				store : ds,
+				height : 400,
+				title : 'Liste des soins',
+
+				columns : [{
+					text : 'Date',
+					flex : 1,
+					sortable : true,
+					dataIndex : 'company'
+				}, {
+					text : 'Symptômes',
+					width : 75,
+					sortable : true,
+					dataIndex : 'price'
+				}, {
+					text : 'Diagnotic',
+					width : 75,
+					sortable : true,
+					renderer : change,
+					dataIndex : 'change'
+				}, {
+					text : 'Traitement',
+					width : 75,
+					sortable : true,
+					renderer : pctChange,
+					dataIndex : 'pctChange'
+				}, {
+					text : 'Poids',
+					width : 85,
+					sortable : true,
+					renderer : Ext.util.Format.dateRenderer('m/d/Y'),
+					dataIndex : 'lastChange'
+				}, {
+					text : 'Sexe',
+					width : 30,
+					sortable : true,
+					renderer : rating,
+					dataIndex : 'rating'
+				}],
+				action : 'soin'
+				/*
+				listeners : {
+					selectionchange : function(model, records) {
+						if (records[0]) {
+							this.up('form').getForm().loadRecord(records[0]);
+						}
+					}
+				}
+				*/
+			},{
+				columnWidth : 0.4,
+				margin : '0 0 0 10',
+				xtype : 'form',
+		
+				bodyPadding : 5,
+				// configure how to read the XML data
+				
+        reader : Ext.create('Ext.data.reader.Xml', {
+            model: 'CLVETLAT.model.Soins',
+            record : 'soins',
+            successProperty: '@success'
+        }),
+	        waitMsgTarget: true,
+				id:'franck',
+				title : 'D&eacute;tails soins',
+				defaults : {
+					width : 240,
+					labelWidth : 90
+				},
+				defaultType : 'textfield',
+				items : [{
+					
+					fieldLabel : 'Nom',
+					name : 'sympt'
+				}, {
+					//xtype : 'textarea',
+					fieldLabel : 'Race',
+					name : 'diag'
+				}, {
+					fieldLabel : 'Sexe',
+					name : 'traite'
+				}, {
+					xtype: 'button',
+            		text : 'Enregister',
+            		formBind: true,
+            		action : 'savee'
+            	}]
+				}]

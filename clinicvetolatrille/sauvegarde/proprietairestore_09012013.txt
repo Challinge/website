@@ -1,0 +1,89 @@
+/**
+ * @ADOUKO Franck Venance
+ */
+Ext.define('CLVETLAT.store.tableaux.Proprietaire', {
+    extend: 'Ext.data.Store',
+    model: 'CLVETLAT.model.tableaux.Proprietaire',
+    
+    //Load automatically data from proxy.
+    autoLoad: true,
+    autoSync: false,
+    	    
+    //Create link with DB.
+    proxy: {
+        type: 'ajax',
+        api: {
+        	read: 'data/tableaux/get_proprietaires.php',
+        	update: 'data/tableaux/update_proprietaire.php',
+        	destroy: 'data/tableaux/delete_proprietaire.php',
+        	create: 'data/tableaux/add_proprietaire.php'
+    	},
+        reader: {
+            type: 'json',
+            root: 'proprietaires',
+            successProperty: 'success'
+        }
+    	
+    	/*
+    	,
+        afterRequest:function(request,success){
+            if(request.method = 'create'){
+                 if (success){
+                	 Ext.Msg.show({
+							title : 'Ajout effectu&eacute;e',
+							msg : 'L\'information a &eacute;t&eacute; correctement ajout&eacute;.',
+							//msg : recupDonnee,
+							buttons : Ext.Msg.OK,
+							icon : Ext.Msg.INFO
+						});
+                	 
+                	 
+                 }
+            }
+            if(request.method = 'DELETE'){
+                if (!success){
+               	 Ext.Msg.show({
+							title : 'Ajout effectu&eacute;e',
+							msg : 'L\'information a &eacute;t&eacute; correctement supprimmmmmmmmt&eacute;.',
+							//msg : recupDonnee,
+							buttons : Ext.Msg.OK,
+							icon : Ext.Msg.INFO
+						});
+               	 
+               	 
+                }
+           }
+        }
+        */
+    	,listeners : 
+		{
+			exception : function(proxy, response, operation) 
+			{
+				//var json = Ext.decode(response.responseText);
+				/*Marche pour retirer la valeur success de json 
+				var s_obj =  response.responseText.toString();
+				var tabOj = s_obj.search("success");
+				var tabop = s_obj.substring(tabOj+9, tabOj+9+3);
+				*/
+				/*Marche pour retirer la valeur de retour de json
+				var s_obj =  response.responseText.toString();
+				var tabOj = s_obj.search("msgjson");
+				var tabop = s_obj.substring(tabOj+10, s_obj.length-3);
+				*/
+				Ext.MessageBox.show(
+				{
+					title : 'REMOTE EXCEPTION',
+					//msg : operation.getError(), //Marche bien
+					
+					//msg :json.message,//marche pas
+					
+					msg : tabop,
+					
+					icon : Ext.MessageBox.ERROR, buttons : Ext.Msg.OK
+				});
+			}
+		}
+    	
+    	
+    }
+});

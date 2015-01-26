@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imgdesc"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textStatZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="@string/textzone" />
+
+    <TextView
+        android:id="@+id/textStatTraite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textStatZone"
+        android:layout_below="@+id/editStatLibZone"
+        android:layout_marginTop="20dp"
+        android:text="@string/texttraiter" />
+    
+     <EditText
+        android:id="@+id/editStatLibZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textStatTraite"
+        android:layout_below="@+id/imageView1"
+        android:ems="10"
+        android:enabled="false" />
+
+
+    <EditText
+        android:id="@+id/editStatTraite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textStatTraite"
+        android:layout_below="@+id/textStatTraite"
+        android:enabled="false"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/valuezero" />
+
+    <Button
+        android:id="@+id/btnStatOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStatTotal"
+        android:layout_toRightOf="@+id/textStatTotal"
+        android:text="@string/btnok" />
+
+    <TextView
+        android:id="@+id/textStatTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textStatZone"
+        android:layout_below="@+id/editStatTraite"
+        android:layout_marginTop="16dp"
+        android:text="@string/texttotal" />
+
+    <EditText
+        android:id="@+id/editStatTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textStatTotal"
+        android:layout_below="@+id/textStatTotal"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        android:text="@string/valuezero" />
+
+
+</RelativeLayout>

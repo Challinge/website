@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">e-compteur</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="editmdp">Mot de passe</string>
+    <string name="editlogin">Pseudo</string>
+    <string name="btnvalider">Valider</string>
+    <string name="imgdesc">Logo ITCI</string>
+    <string name="textzone">Zone :</string>
+    <string name="cbochoixzone">zone à choisir</string>
+    <string name="texttotal">Total :</string>
+    <string name="texttraiter">Traité :</string>
+    <string name="btnsuivant">Suivant</string>
+    <string name="btnstatistique">Statistiques</string>
+    <string name="valuezero">0</string>
+    <string name="numcompteur">N° Compteur</string>
+    <string name="numancienindex">Ancien index</string>
+    <string name="numnouvelindex">Nouvel index</string>
+    <string name="texthintcompteur">compteur à saisir</string>
+    <string name="captureimage">Capture</string>
+    <string name="btncapture">Capture</string>
+    <string name="imgphotodesc">image de la prise de photo</string>
+    <string name="apercugraphique">Aperçu graphique</string>
+    <string name="btntermine">Terminer</string>
+    <string name="btnok">OK</string>
+    <string name="btnzone">Zone</string>
+    <string name="notification_title">Ma premiere notification www.tutos-android.com</string>
+    <string name="notification_desc">Cliquez sur moi je suis une notification</string>
+
+</resources>
