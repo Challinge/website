@@ -1,0 +1,2 @@
+User - agent : *
+2 Disallow : /pages/webmail

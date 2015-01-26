@@ -1,0 +1,8 @@
+
+RewriteEngine on
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+RewriteCond %{HTTP_HOST} ^myemail\.iformat\-institute\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.myemail\.iformat\-institute\.net$
+RewriteRule ^/?$ "https\:\/\/iformat\-institute\.net\:2096\/cpsess2274169538\/3rdparty\/squirrelmail\/src\/webmail\.php" [R=301,L]
+

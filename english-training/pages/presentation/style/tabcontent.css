@@ -1,0 +1,68 @@
+﻿
+
+ul.tabs{
+    padding: 7px 0;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    text-align: left; /*set to left, center, or right to align the tabs as desired*/
+    }
+        
+ul.tabs li{
+    display: inline;
+    margin: 0;
+    /*margin-right:3px; /*distance between tabs*/
+    }
+        
+ul.tabs li a{
+    font: normal 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: relative;
+    padding: 7px 60px;
+
+    border-bottom-color:#DFE4DF;
+    color: #2486C1;
+   /* background: #F0F0F0 url(tabbg.gif) 0 0 repeat-x;*/
+    /*border-radius: 3px 3px 0 0;*/
+    outline:none;
+    }
+        
+ul.tabs li a:visited{
+    color:#2486C1;
+    }
+        
+ul.tabs li a:hover{
+    border: 1px solid  #DFE4DF;
+    background:#fef9f9 url(tabbg.gif) 0 -36px repeat-x;
+	}
+        
+ul.tabs li.selected a, ul.tabs li.selected a:hover{
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background:#fef9f9;
+    border: 1px solid  #DFE4DF;
+    border-bottom-color: #fef9f9;
+	color:#FF4800;
+	
+	}
+            
+ul.tabs li.selected a:hover{
+    text-decoration: none;
+	}
+     
+div.tabcontents{
+    border: 1px solid   #DFE4DF;
+    background-color:#fef9f9;
+	width:98.5%;
+	padding:5px;
+	float:left;
+	}
+
+.div-tab{
+	float:left;
+	width:97.7%;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+	}	

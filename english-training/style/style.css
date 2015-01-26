@@ -1,0 +1,552 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#f2f2f2;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#2e2b2b;
+	}
+
+.container-top{
+	width:960px;
+	margin:0 auto;
+	}
+
+.div-header{
+	width:100%;
+	float:left;
+	height:90px;
+	margin-bottom:5px;
+	}
+	
+.div-static-slide{
+	width:100%;
+	float:left;
+	height:200px;
+	background:#2486C1;	
+	}
+	
+.content{
+	width:100%;
+	min-height:500px;
+	background:#fff;
+	float:left;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	}
+.container-top h1{
+	color:#fff;
+	display:block;
+	float:left;
+	width:30%;
+	height:200px;
+	font-family: 'segoe_uilight';
+	font-size:25px;
+	text-align:center;
+	padding-top:10px;
+	font-weight:500;
+	line-height:1.2em;
+	}
+.btn-decouvert{
+	float:right;
+	width:auto;
+	height:auto;
+	padding:10px;
+	color:#fff;
+	background-color:#FF4800;
+	font-family: 'segoe_uilight';
+	border-radius:5px;
+	margin-top:10%;
+	margin-right:5%;
+	border:1px solid #ac4016;
+	}
+.btn-decouvert:hover{
+	background:#d84106;
+	}
+.ilo{
+	float:right;
+	width:auto;
+	height:auto;
+	padding:5px;
+	font-family: 'segoe_uilight';
+	background:#2486C1;
+	color:#fff;
+	}
+
+.band-defil{
+	float:right;
+	width:89%;
+	overflow:hidden;
+	height:20px;
+	margin:5px;
+	}
+		
+.div-logo{
+	float:left;
+	width:200px;
+	height:90px;
+	margin-left:25px;
+	}
+	
+.div-menu{
+	float:right;
+	width:76%;
+	height:50px;
+	margin-top:50px;
+	}
+marquee{
+	font-family: 'segoe_uilight';
+	font-size:14px;
+	}
+	
+.div-bloc{
+	float:left;
+	width:100%;
+    }
+	
+.bloc1{
+	float:left;
+	width:50%;
+	min-height:250px;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:10px;
+    }
+.bloc2{
+	float:right;
+	width:46%;
+	min-height:250px;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:10px;
+	}	
+	
+.plus{
+	color:#FF4800;
+	}	
+.plus:hover{
+	color:#2486C1;
+	text-decoration:underline;
+	}
+.cel{
+	margin:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding-bottom:10px;
+	}
+	
+.li-down:hover{
+	box-shadow: 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+	}
+.div-service{
+	width:50%;
+	float:left;
+	margin:10px;
+	min-height:300px;
+    }
+	
+div .title-div-service{
+	font-family:'segoe_uilight';
+    text-transform:uppercase;
+ 	padding-top:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	color:#2486C1;
+	font-size:18px;
+	margin-bottom:10px;
+	}
+.para-service{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	font-size:15px;
+	}
+.div-advan{
+	width:45%;
+	float:right;
+	min-height:500px;
+	margin-bottom:40px;
+	margin-top:20px;
+	margin-right:10px;
+   }
+  
+.titre-exper{
+	font-family:'segoe_uilight';
+    text-transform:uppercase;
+ 	padding-top:5px;
+	font-size:15px;
+	background:#2486C1;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 97.5%;
+    }
+	 
+.div-foot{
+	float:left;
+	width:100%;
+	min-height:150px;
+
+	}	 
+  
+.titre-conf{
+	font-family:'segoe_uilight';
+    text-transform:uppercase;
+ 	padding:10px;
+	font-size:15px;
+	color:#2486C1;
+	}
+  
+.div-slid-client{
+	float:left;
+	width:97.69%;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+	}
+	
+.div-foot-bottom{
+	float:left;
+	width:100%;
+
+	background:#3e3d3d;
+	margin-bottom:10px;
+	margin-top:10px;
+    }
+.foot-left{
+	float:left;
+	margin:10px;
+	min-height:100px;
+   }
+.foot-ul{
+   float:left;
+   margin-left:25px; 
+   margin-right:25px;    
+   }   
+	
+.foot-ul li a{
+	color:#fff;
+	margin-left:20px; 
+	margin-right:20px; 
+	}
+.foot-ul li a:hover{
+	color:#FF4800;
+	}
+.container-slider{
+	width:960px;
+	height:190px;
+	background:#fff;
+	margin-top:5px;	
+	}	
+
+/*================================
+	Modification apportée en bas
+    pour prendre en compte la
+    balise marquee qui n'est pas 
+    reconnue par le W3C et qui génère
+    des erreurs. Donc pas de Validation
+==================================*/
+
+.marquee {
+	width: 91%;
+	height: 25px;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	
+
+	background-color: #f2f2f2;
+
+	-webkit-transition: background-color 350ms;
+	-moz-transition: background-color 350ms;
+    transition: background-color 350ms;
+}
+
+.marquee #defilement-1, #defilement-2 {
+	position: absolute;
+
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 5px;
+    font-size: 14px;
+
+	text-align: center;
+
+	color: #2e2b2b;
+    
+
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+}
+.marquee #defilement-1:nth-child(1) {
+	animation: left-one 20s linear 2s infinite;
+	-moz-animation: left-one 20s linear 2s infinite;
+	-webkit-animation: left-one 20s linear 2s infinite;
+}
+.marquee #defilement-2:nth-child(2) {
+	animation: left-two 20s linear 2s infinite;
+	-moz-animation: left-two 20s linear 2s infinite;
+	-webkit-animation: left-two 20s linear 2s infinite;
+}
+.marquee.down #defilement-1, #defilement-2{
+	transform:translateY(-100%);
+	-moz-transform:translateY(-100%);
+	-webkit-transform:translateY(-100%);
+}
+.marquee.down #defilement-1:nth-child(1) {
+	animation: down-one 20s linear 2s infinite;
+	-moz-animation: down-one 20s linear 2s infinite;
+	-webkit-animation: down-one 20s linear 2s infinite;
+}
+.marquee.down #defilement-2:nth-child(2) {
+	animation: down-two 20s linear 2s infinite;
+	-moz-animation: down-two 20s linear 2s infinite;
+	-webkit-animation: down-two 20s linear 2s infinite;
+}
+.marquee.up #defilement-1, #defilement-2{	
+	transform:translateY(100%);
+	-moz-transform:translateY(100%);
+	-webkit-transform:translateY(100%);
+}
+.marquee.up #defilement-1:nth-child(1) {
+	animation: up-one 20s linear 2s infinite;
+	-moz-animation: up-one 20s linear 2s infinite;
+	-webkit-animation: up-one 20s linear 2s infinite;
+}
+.marquee.up #defilement-2:nth-child(2) {
+	animation: up-two 20s linear 2s infinite;
+	-moz-animation: up-two 20s linear 2s infinite;
+	-webkit-animation: up-two 20s linear 2s infinite;
+}
+
+/*================================
+	Move the Marquee to the Left
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes left-one {
+	0%	{
+		-moz-transform:translateX(100%);
+	}
+	10% {
+		-moz-transform:translateX(0);
+	}
+	40% {
+		-moz-transform:translateX(0);
+	}
+	50% {
+		-moz-transform:translateX(-100%);
+	}
+	100%{
+		-moz-transform:translateX(-100%);
+	}
+}
+@-moz-keyframes left-two {
+	0% {
+		-moz-transform:translateX(100%);
+	}
+	50% {
+		-moz-transform:translateX(100%);
+	}
+	60% {
+		-moz-transform:translateX(0);		
+	}
+	90% {
+		-moz-transform:translateX(0);		
+	}
+	100%{
+		-moz-transform:translateX(-100%);
+	}
+}
+/** Webkit Keyframes **/
+@-webkit-keyframes left-one {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+	10% {
+		-webkit-transform:translateX(0);
+	}
+	40% {
+		-webkit-transform:translateX(0);
+	}
+	50% {
+		-webkit-transform:translateX(-100%);
+	}
+	100%{
+		-webkit-transform:translateX(-100%);
+	}
+}
+@-webkit-keyframes left-two {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+	50% {
+		-webkit-transform:translateX(100%);
+	}
+	60% {
+		-webkit-transform:translateX(0);		
+	}
+	90% {
+		-webkit-transform:translateX(0);		
+	}
+	100%{
+		-webkit-transform:translateX(-100%);
+	}
+}
+
+/*================================
+	Move the Marquee Downwards
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes down-one {
+	0%	{
+		-moz-transform:translateY(-100%);
+	}
+	10% {
+		-moz-transform:translateY(0);
+	}
+	40% {
+		-moz-transform:translateY(0);
+	}
+	50% {
+		-moz-transform:translateY(100%);
+	}
+	100%{
+		-moz-transform:translateY(100%);
+	}
+}
+@-moz-keyframes down-two {
+	0% {
+		-moz-transform:translateY(-100%);
+	}
+	50% {
+		-moz-transform:translateY(-100%);
+	}
+	60% {
+		-moz-transform:translateY(0);		
+	}
+	90% {
+		-moz-transform:translateY(0);		
+	}
+	100%{
+		-moz-transform:translateY(100%);
+	}
+}
+
+/** Webkit Keyframes **/
+@-webkit-keyframes down-one {
+	0% {
+		-webkit-transform:translateY(-100%);
+	}
+	10% {
+		-webkit-transform:translateY(0);
+	}
+	40% {
+		-webkit-transform:translateY(0);
+	}
+	50% {
+		-webkit-transform:translateY(100%);
+	}
+	100%{
+		-webkit-transform:translateY(100%);
+	}
+}
+@-webkit-keyframes down-two {
+	0% {
+		-webkit-transform:translateY(-100%);
+	}
+	50% {
+		-webkit-transform:translateY(-100%);
+	}
+	60% {
+		-webkit-transform:translateY(0);		
+	}
+	90% {
+		-webkit-transform:translateY(0);		
+	}
+	100%{
+		-webkit-transform:translateY(100%);
+	}
+}
+
+/*================================
+	Move the Marquee Upwards
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes up-one {
+	0%	{
+		-moz-transform:translateY(100%);
+	}
+	10% {
+		-moz-transform:translateY(0);
+	}
+	40% {
+		-moz-transform:translateY(0);
+	}
+	50% {
+		-moz-transform:translateY(-100%);
+	}
+	100%{
+		-moz-transform:translateY(-100%);
+	}
+}
+@-moz-keyframes up-two {
+	0% {
+		-moz-transform:translateY(100%);
+	}
+	50% {
+		-moz-transform:translateY(100%);
+	}
+	60% {
+		-moz-transform:translateY(0);		
+	}
+	90% {
+		-moz-transform:translateY(0);		
+	}
+	100%{
+		-moz-transform:translateY(-100%);
+	}
+}
+
+/** Webkit Keyframes **/
+@-webkit-keyframes up-one {
+	0% {
+		-webkit-transform:translateY(100%);
+	}
+	10% {
+		-webkit-transform:translateY(0);
+	}
+	40% {
+		-webkit-transform:translateY(0);
+	}
+	50% {
+		-webkit-transform:translateY(-100%);
+	}
+	100%{
+		-webkit-transform:translateY(-100%);
+	}
+}
+@-webkit-keyframes up-two {
+	0% {
+		-webkit-transform:translateY(100%);
+	}
+	50% {
+		-webkit-transform:translateY(100%);
+	}
+	60% {
+		-webkit-transform:translateY(0);		
+	}
+	90% {
+		-webkit-transform:translateY(0);		
+	}
+	100%{
+		-webkit-transform:translateY(-100%);
+	}
+}

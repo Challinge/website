@@ -1,0 +1,15 @@
+#formulaire_webmail
+{
+ width: 400px;
+ margin: auto;
+ margin-top: 150px;    
+}
+
+#titre_webmail
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Times New Roman', 'Trebuchet MS','Arial Rounded MT',Arial;
+}

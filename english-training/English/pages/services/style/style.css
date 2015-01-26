@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#f2f2f2;
+	font-family: 'segoe_uilight';
+	color:#2e2b2b;
+	}
+
+.container-top{
+	width:960px;
+	margin:0 auto;
+	}
+
+.div-header{
+	width:100%;
+	float:left;
+	height:90px;
+	margin-bottom:5px;
+	}
+	
+.div-static-slide{
+	width:100%;
+	float:left;
+	height:10px;
+	background:#2486C1;	
+	}
+	
+.content{
+	width:100%;
+	min-height:500px;
+	background:#fff;
+	float:left;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	}
+.container-top h1{
+	color:#fff;
+	display:block;
+	float:left;
+	width:30%;
+	height:200px;
+	font-family: 'segoe_uilight';
+	font-size:25px;
+	text-align:center;
+	padding-top:10px;
+	font-weight:500;
+	line-height:1.2em;
+	}
+.btn-decouvert{
+	float:right;
+	width:auto;
+	height:auto;
+	padding:10px;
+	color:#fff;
+	background-color:#FF4800;
+	font-family: 'segoe_uilight';
+	border-radius:5px;
+	margin-top:10%;
+	margin-right:5%;
+	border:1px solid #ac4016;
+	}
+.btn-decouvert:hover{
+	background:#d84106;
+	}
+.ilo{
+	float:right;
+	width:auto;
+	height:auto;
+	padding:5px;
+	font-family: 'segoe_uilight';
+	background:#2486C1;
+	color:#fff;
+	}
+
+.band-defil{
+	float:right;
+	width:88%;
+	overflow:hidden;
+	height:20px;
+	margin:5px;
+	}
+		
+.div-logo{
+	float:left;
+	width:200px;
+	height:90px;
+	margin-left:25px;
+	}
+	
+.div-menu{
+	float:right;
+	width:76%;
+	height:50px;
+	margin-top:50px;
+	}
+marquee{
+	font-family: 'segoe_uilight';
+	font-size:14px;
+	}
+	
+.div-bloc{
+	float:left;
+	width:100%;
+    }
+	
+.bloc1{
+	float:left;
+	width:50%;
+	min-height:250px;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:10px;
+    }
+.bloc2{
+	float:right;
+	width:46%;
+	min-height:250px;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:10px;
+	}	
+	
+.plus{
+	color:#FF4800;
+	}	
+.plus:hover{
+	color:#2486C1;
+	text-decoration:underline;
+	}
+.cel{
+	margin:10px;
+	font-family: 'segoe_uilight';
+	font-size:15px;
+	padding-bottom:10px;
+	}
+	
+.li-down:hover{
+	box-shadow: 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+	}
+.div-service{
+	width:50%;
+	float:left;
+	margin:10px;
+	min-height:300px;
+    }
+	
+div .title-div-service{
+	font-family:'segoe_uilight';
+    text-transform:uppercase;
+ 	padding-top:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	color:#2486C1;
+	font-size:18px;
+	margin-bottom:10px;
+	float:left;
+	}
+.para-service{
+	font-family: 'segoe_uilight';
+	line-height:1.5em;
+	font-size:15px;
+	}
+.div-advan{
+	width:45%;
+	float:right;
+	min-height:500px;
+	margin-bottom:40px;
+	margin-top:20px;
+	margin-right:10px;
+   }
+  
+.titre-exper{
+	font-family:'segoe_uilight';
+    text-transform:uppercase;
+ 	padding-top:5px;
+	font-size:15px;
+	background:#2486C1;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 97.5%;
+    }
+	 
+.div-foot{
+	float:left;
+	width:100%;
+	min-height:150px;
+
+	}	 
+  
+.titre-conf{
+	font-family:'segoe_uilight';
+    text-transform:uppercase;
+ 	padding:10px;
+	font-size:15px;
+	color:#2486C1;
+	}
+  
+.div-slid-client{
+	float:left;
+	width:97.69%;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+	}
+	
+.div-foot-bottom{
+	float:left;
+	width:100%;
+
+	background:#3e3d3d;
+	margin-bottom:10px;
+	margin-top:10px;
+    }
+.foot-left{
+	float:left;
+	margin:10px;
+	min-height:100px;
+   }
+.foot-ul{
+   float:left;
+   margin-left:23px; 
+   margin-right:23px;    
+   }   
+	
+.foot-ul li a{
+	color:#fff;
+	margin-left:20px; 
+	margin-right:20px; 
+	}
+.foot-ul li a:hover{
+	color:#FF4800;
+	}
+.container-slider{
+	width:960px;
+	height:90px;
+	background:#fff;
+	margin-top:5px;	
+	}
+	
+.div-illustration-img{
+	float:left;
+	width:100%;
+	height:190px;
+	background:#333;
+	}
+.parag-presentation{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	display:block;
+	width:93%;
+	margin-left:15px;
+	margin-right:15px;
+	padding:15px;
+	min-height:50px;
+	float:left;
+	line-height:1.5em;
+	}
+	
+.titre-presentation{
+	font-family:'segoe_uilight';
+	font-size:16px;
+	text-transform:uppercase;
+	padding:10px;
+	display:block;
+	height:17px;
+	float:left;
+	color: #2486C1;
+	margin-top:10px;	
+	}
+	
+.para-presen-tab{
+	float:left;
+	display:block;
+	width:45%;
+	min-height:100px;
+	margin-bottom:30px;
+	padding:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:1.6em;
+	color:#2e2b2b;
+	}	
+						
